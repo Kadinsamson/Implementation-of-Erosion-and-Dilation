@@ -42,9 +42,9 @@ from matplotlib import pyplot as plt
 # Create the Text using cv2.putText
 
 # Create the text using cv2.putText
-text_image = np.zeros((100,370),dtype = 'uint8')
+text_image = np.zeros((100,250),dtype = 'uint8')
 font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-cv2.putText(text_image,"KADIN SAMSON",(5,70),font,2,(255),2,cv2.LINE_AA) 
+cv2.putText(text_image,"KADIN SAMSON",(5,100),font,2,(255),2,cv2.LINE_AA) 
 plt.title("Original Image")
 plt.imshow(text_image,'hot')
 plt.axis('off')
